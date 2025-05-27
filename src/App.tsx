@@ -4,7 +4,7 @@ import { Heart, HeartPulse } from "lucide-react";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { EmergencyContacts } from "./components/EmergencyContacts";
 import { EmergencyScenarios } from "./components/EmergencyScenarios";
-import { MedicalSupplies } from "./components/MedicalSupplies";
+import { FirstAidKit } from "./components/FirstAidKit";
 import { SymptomChecker } from "./components/SymptomChecker";
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
   const tabs = [
     { id: "emergency", label: "Emergency" },
     { id: "contacts", label: "Contacts" },
-    { id: "supplies", label: "First Aid Kit" },
+    { id: "firstaid", label: "First Aid Kit" },
     { id: "symptoms", label: "Symptoms" },
   ];
 
@@ -133,7 +133,7 @@ function App() {
         >
           {activeTab === "emergency" && <EmergencyScenarios />}
           {activeTab === "contacts" && <EmergencyContacts />}
-          {activeTab === "supplies" && <MedicalSupplies />}
+          {activeTab === "firstaid" && <FirstAidKit />}
           {activeTab === "symptoms" && <SymptomChecker />}
         </motion.div>
       </main>

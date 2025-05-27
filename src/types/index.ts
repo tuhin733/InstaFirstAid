@@ -1,3 +1,21 @@
+export interface EmergencyCategory {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+  symptoms: string[];
+}
+
+export interface EmergencyScenario {
+  id: string;
+  categoryId: string;
+  title: string;
+  description: string;
+  steps: string[];
+  warning: string;
+}
+
 export interface EmergencyContact {
   country: string;
   ambulance: string;
@@ -5,18 +23,13 @@ export interface EmergencyContact {
   fire: string;
 }
 
-export interface EmergencyScenario {
-  id: string;
-  title: string;
-  description: string;
-  steps: string[];
-  warning?: string;
-}
-
 export interface MedicalSupply {
   id: string;
   name: string;
-  usage: string;
+  description: string;
+  quantity: number;
+  category: string;
+  essential: boolean;
   warnings: string[];
 }
 
@@ -25,6 +38,20 @@ export interface Symptom {
   name: string;
   subtitle: string;
   description: string;
+  severity: string;
+  commonCauses: string[];
   recommendations: string[];
-  seekHelp: string[];
+  seekMedicalAttention: boolean;
+}
+
+export interface Medication {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  examples: string[];
+  dosageForm: string[];
+  commonUses: string[];
+  warnings: string[];
+  essential: boolean;
 }

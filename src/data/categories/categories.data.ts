@@ -1,0 +1,92 @@
+import { EmergencyCategory } from "../../types";
+
+export const emergencyCategories: EmergencyCategory[] = [
+  {
+    id: "trauma",
+    title: "Trauma & Injuries",
+    description: "Immediate care for physical injuries and accidents",
+    icon: "bandage",
+    color: "from-red-500 to-red-600",
+    symptoms: [
+      "bleeding",
+      "burns",
+      "cuts",
+      "fractures",
+      "sprains",
+      "headInjury",
+    ],
+  },
+  {
+    id: "medical",
+    title: "Medical Emergencies",
+    description: "Life-threatening medical conditions requiring urgent care",
+    icon: "stethoscope",
+    color: "from-blue-500 to-blue-600",
+    symptoms: [
+      "choking",
+      "stroke",
+      "allergicReaction",
+      "seizure",
+      "diabeticEmergency",
+      "poisoning",
+    ],
+  },
+  {
+    id: "environmental",
+    title: "Environmental Emergencies",
+    description: "Emergencies caused by environmental factors",
+    icon: "sun",
+    color: "from-yellow-500 to-yellow-600",
+    symptoms: [
+      "heatstroke",
+      "hypothermia",
+      "frostbite",
+      "drowning",
+      "electricalInjury",
+      "snakeBite",
+    ],
+  },
+  {
+    id: "cardiac",
+    title: "Cardiac & Respiratory",
+    description: "Heart and breathing related emergencies",
+    icon: "heart",
+    color: "from-purple-500 to-purple-600",
+    symptoms: [
+      "cardiacArrest",
+      "breathingDifficulty",
+      "angina",
+      "pulmonaryEmbolism",
+      "heartAttack",
+      "asthmaAttack",
+    ],
+  },
+  {
+    id: "pediatric",
+    title: "Pediatric Emergencies",
+    description: "Emergency care specific to infants and children",
+    icon: "baby",
+    color: "from-pink-500 to-pink-600",
+    symptoms: [
+      "infantChoking",
+      "febrileSeizure",
+      "croup",
+      "severeDehydration",
+      "allergicReaction",
+    ],
+  },
+  {
+    id: "mental",
+    title: "Mental Health Emergencies",
+    description:
+      "Urgent mental health situations requiring immediate attention",
+    icon: "brain",
+    color: "from-indigo-500 to-indigo-600",
+    symptoms: [
+      "panicAttack",
+      "suicidalBehavior",
+      "acutePsychosis",
+      "severeAnxiety",
+    ],
+  },
+];
